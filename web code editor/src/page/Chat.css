@@ -1,0 +1,234 @@
+.message-content {
+  padding: 10px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.message-section {
+  margin-bottom: 20px;
+}
+
+.section-header {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #4CAF50;
+}
+
+.section-text {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+.list-item {
+  margin: 5px 0;
+  padding-left: 20px;
+  list-style-type: none;
+  position: relative;
+}
+
+.list-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+}
+
+.code-block {
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 10px 0;
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-family: 'Courier New', monospace;
+  color: #d4d4d4;
+}
+
+.section-header {
+  font-size: 1.1em;
+  color: #4CAF50;
+  border-bottom: 1px solid #404040;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.subsection {
+  margin-left: 20px;
+  border-left: 2px solid #404040;
+  padding-left: 10px;
+}
+
+.code-block-container {
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  margin: 16px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #404040;
+}
+
+.language-tag {
+  color: #808080;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.copy-button {
+  background: transparent;
+  border: 1px solid #404040;
+  color: #d4d4d4;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #404040;
+}
+
+.code-content {
+  padding: 16px;
+  margin: 0;
+  overflow-x: auto;
+  min-height: 100px;
+}
+
+.code-content .monaco-editor {
+  min-height: 100px !important;
+  width: 100% !important;
+}
+
+/* Update existing code block styles */
+.code-block {
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  margin: 16px 0;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Style for inline code */
+code {
+  background-color: #2d2d2d;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* Update message styles */
+.message {
+  padding: 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.message.user {
+  background-color: #2d2d2d;
+}
+
+.message.assistant {
+  background-color: #1e1e1e;
+}
+
+/* Update copy success state */
+.copy-button.copied {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+/* Chat container styles */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Update Editor component styles */
+.monaco-editor {
+  width: 100% !important;
+  min-height: 100px !important;
+}
+
+.editor-wrapper {
+  width: 100%;
+  min-height: 100px;
+}
+
+/* Chat layout improvements */
+.chat-header {
+  padding: 20px;
+  border-bottom: 1px solid #404040;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-input-form {
+  padding: 20px;
+  border-top: 1px solid #404040;
+  background-color: #1e1e1e;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #404040;
+  background-color: #2d2d2d;
+  color: #d4d4d4;
+  font-size: 14px;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Improve message spacing */
+.message + .message {
+  margin-top: 20px;
+}
+
+/* Make code blocks more prominent */
+.code-block-container {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #404040;
+}
+
+/* Improve readability of code */
+.monaco-editor .mtk1 {
+  color: #d4d4d4 !important;
+}
+
+.monaco-editor .line-numbers {
+  color: #858585 !important;
+} 
